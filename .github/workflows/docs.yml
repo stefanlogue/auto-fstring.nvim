@@ -24,7 +24,7 @@ jobs:
       - name: panvimdoc
         uses: kdheepak/panvimdoc@v3.0.6
         with:
-          vimdoc: hydrate.nvim
+          vimdoc: auto-fstring.nvim
           description: reminders to keep hydrated while you code
           pandoc: README.md
           toc: false
