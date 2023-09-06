@@ -12,57 +12,20 @@
 
 ## Table of contents
 - [Installation](#installation)
-  - [Optional Requirements](#requirements)
   - [lazy.nvim](#lazy)
-- [Config](#config)
-- [Commands](#commands)
 - [Contributing](#contributing)
 
 ## Installation<a name="installation"></a>
 
-### Optional requirements<a name="requirements"></a>
-- [nvim-notify](https://github.com/rcarriga/nvim-notify)
-
 ### lazy.nvim<a name="lazy"></a>
 ```lua
 {
-  "stefanlogue/hydrate.nvim",
+  "stefanlogue/auto-fstring.nvim",
   -- This installs the latest stable release.
   -- Set to false or omit to install the latest development version
   version = "*",
-  opts = {
-    -- See below for config options
-  }
 }
 ```
-
-## Config<a name="config"></a>
-This is a list of the options that can be passed to `require("hydrate").setup()` with their default values:
-```lua
-{
-  -- The interval between notifications in minutes
-  minute_interval = 20,
-
-  -- The render style for notifications
-  -- Accepted values are "default", "minimal", "simple" or "compact"
-  render_style = "compact",
-
-  -- Loads time of last drink on startup
-  -- Useful if you don't have long-running neovim instances
-  -- or if you tend to have multiple instances running at a time
-  persist_timer = false
-}
-```
-
-## Commands<a name="commands"></a>
-- `HydrateWhen` - Prints minutes until next drink
-- `HydrateNow` - Tell us you've had a drink so we can reset the timer
-- `DrinkInterval` - Set the interval between drinks in minutes
-- `HydrateDisable` - Disable hydration reminders
-- `HydrateEnable` - Enable hydration reminders
 
 ## Contributing<a name="contributing"></a>
 Please read the [CONTRIBUTING](https://github.com/stefanlogue/hydrate.nvim/blob/main/.github/CONTRIBUTING.md) guide before submitting a pull request.
-
-## Acknowledgements
-[stand.nvim](https://github.com/mvllow/stand.nvim) for the general idea
